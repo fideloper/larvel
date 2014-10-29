@@ -6,7 +6,7 @@ The little emoji framework 👌
 
 ## Install:
 
-```bash
+```shell
 composer require larvel/framework:dev-master
 ```
 
