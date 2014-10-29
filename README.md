@@ -2,6 +2,8 @@
 
 The little emoji framework 👌
 
+> Currently [best viewed in Safari](http://caniemoji.com/).
+
 ## Install:
 
 ```bash
