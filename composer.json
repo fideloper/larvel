@@ -1,0 +1,23 @@
+{
+    "name": "larvel/framework",
+    "description": "Larvel™ Framework",
+    "require": {
+        "illuminate/container": "~4.2@dev",
+        "symfony/http-foundation": "~2.6",
+        "symfony/http-kernel": "~2.6",
+        "symfony/routing": "~2.6"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "fideloper",
+            "email": "fideloper@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Larvel™\\": "src/Larvel™/"
+         }
+    }
+}

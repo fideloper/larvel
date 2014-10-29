@@ -1,0 +1,6 @@
+/vendor/
+._*
+.DS_Store
+.idea
+composer.lock
+public
