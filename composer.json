@@ -3,9 +3,9 @@
     "description": "Larvel™ Framework",
     "require": {
         "illuminate/container": "~4.2@dev",
-        "symfony/http-foundation": "~2.6",
-        "symfony/http-kernel": "~2.6",
-        "symfony/routing": "~2.6"
+        "symfony/http-foundation": "~2.5",
+        "symfony/http-kernel": "~2.5",
+        "symfony/routing": "~2.5"
     },
     "license": "MIT",
     "authors": [
