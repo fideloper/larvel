@@ -1,4 +1,3 @@
-larvel-
-=======
+# Larvel™
 
-The little emoji framework.
+The little emoji framework 👌
