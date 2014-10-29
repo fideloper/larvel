@@ -14,12 +14,7 @@ class RunTest extends PHPUnit_Framework_TestCase {
     public function testCreateRouter()
     {
         $app = new 🐛;
-        $router = $app[🏃];
-
-        $router->get('/', function()
-        {
-            return 'yay';
-        });
+        $router = $app['🏃'];
 
         $this->assertInstanceOf('\Larvel™\Routing\🏃', $router);
     }
@@ -28,7 +23,7 @@ class RunTest extends PHPUnit_Framework_TestCase {
     {
         $app = new 🐛;
 
-        $request = $app[❓];
+        $request = $app['❓'];
 
         $this->assertInstanceOf('\Symfony\Component\HttpFoundation\Request', $request);
     }
@@ -37,7 +32,7 @@ class RunTest extends PHPUnit_Framework_TestCase {
     {
         $app = new 🐛;
 
-        $router = $app[🏃];
+        $router = $app['🏃'];
 
         $router->get('/', function()
         {

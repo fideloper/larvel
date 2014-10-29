@@ -10,33 +10,33 @@ class 🐛 extends Container {
 
     public function __construct()
     {
-        $this[🏃] = $this->share(function($app)
+        $this['🏃'] = $this->share(function($app)
         {
             return $app->make('Larvel™\Routing\🏃');
         });
 
-        $this[❓] = Request::createFromGlobals();
+        $this['❓'] = Request::createFromGlobals();
     }
 
     public function 🔫()
     {
         $context = new RequestContext;
-        $context->fromRequest( $this[❓] );
+        $context->fromRequest( $this['❓'] );
 
-        $matcher = new UrlMatcher($this[🏃]->routes(), $context);
+        $matcher = new UrlMatcher($this['🏃']->routes(), $context);
 
-        $parameters = $matcher->matchRequest( $this[❓] );
+        $parameters = $matcher->matchRequest( $this['❓'] );
 
         if( $parameters['_controller'] instanceof \Closure )
         {
-            $out = $parameters['_controller']($this[❓]);
+            $out = $parameters['_controller']($this['❓']);
         } elseif( is_string($parameters['_controller']) )
         {
             $parts = explode('@', $parameters['_controller']);
 
             $controller = $his->make($parts[0]);
 
-            $out = $controller->$parts[1]($this[❓]);
+            $out = $controller->$parts[1]($this['❓']);
         }
 
         if( ! $out instanceof Response )
